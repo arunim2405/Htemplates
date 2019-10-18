@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../assets/css/materialize.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <title>JojoRide &#8226; Dashboard</title>
+  </head>
+  <body>
+      <header>
+          <div class="menu-btns">
+            <div class="navbar-lg">
+              <div class="nav-left"><a class="brand">JojoRide</a></div>
+              <div class="nav-center"></div>
+              <div class="nav-right">
+                <a href="" class="search-rides"
+                  ><i class="fa fa-search fa-lg"></i> Find a Ride</a
+                >
+                <a href="" class="add-ride"
+                  ><i class="fa fa-plus-circle fa-lg"></i> Offer a Ride</a
+                >
+                <a  style="align-self: center;" data-target="slide-out" class="sidenav-trigger"> Username <img style="vertical-align: middle;" src="../assets/img/users/user-2517433_640.png" alt="" class="circle" width="50px" ></a>
+              </div>
+            </div>
+            <div class="navbar-sm">
+              <div class="nav-left">
+                <!-- <i href="" class="login"><i class="fa fa-user-circle fa-lg"></i></a> -->
+                <a href="" data-target="slide-out" class="sidenav-trigger"><img style="vertical-align: middle;" src="../assets/img/users/user-2517433_640.png" alt="" class="circle" width="30px" ></a>
+              </div>
+              <div class="nav-center"><a href="" class="brand-sm">J</a></div>
+              <div class="nav-right">
+                <a href="" class="search-rides"
+                  ><i class="fa fa-search fa-lg"></i></a
+                ><a href="" class="add-ride"
+                  ><i class="fa fa-plus-circle fa-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div id="login-menu">
+            <div id="login-form">
+              <div class="logo">
+                <img src="imgs/login-logo.png" alt="JojoRide Logo" />
+              </div>
+              <h1>Sign In</h1>
+              <form action="">
+                <div>
+                  <label for="">Email or username</label>
+                  <input type="text" class="text-input" />
+                </div>
+                <div>
+                  <label for="">Password</label>
+                  <input type="password" class="text-input" />
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </form>
+              <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#">Sign in with Company or School</a>
+              </div>
+              <div class="or">
+                <hr class="bar" />
+                <span>OR</span>
+                <hr class="bar" />
+              </div>
+              <a href="#" class="secondary-btn signup">Create an account</a>
+            </div>
+            <div id="signup-form">Signup Form here</div>
+          </div>
+          <div id="ride-menu">
+            <div id="add-ride-form">
+              <h1>Offer a ride on your next journey</h1>
+              <div class="add-ride-progress"></div>
+              <div class="ride-details">
+                <div class="ride-destination">
+                  <h3>Pickup and Drop-off Points</h3>
+                  <form action="">
+                    <div>
+                      <label for="startState">State</label>
+                      <input type="text" id="startState" />
+                    </div>
+                    <div>
+                      <label for="startDistrict">District</label>
+                      <input type="text" id="startDistrict" />
+                    </div>
+                    <div>
+                      <label for="endState">State</label>
+                      <input type="text" id="endState" />
+                    </div>
+                    <div>
+                      <label for="endDistrict">District</label>
+                      <input type="text" id="endDistrict" />
+                    </div>
+                  </form>
+                </div>
+                <div class="ride-time">
+                  <form action="">
+                    <div>
+                      <label for="startState">Date &amp; Time</label>
+                      <input type="datetime" name="" id="startDate" />
+                    </div>
+                    <div>
+                      Is this a 2-way Trip?
+                      <input type="checkbox" name="Return Trip" id="returnTrip" />
+                    </div>
+                    <div>
+                      <label for="startDistrict">Return Date</label>
+                      <input type="datetime" name="" id="returnDate" />
+                    </div>
+                    <div>
+                      <label for="seats">Available Seats</label>
+                      <input type="number" id="seats" />
+                    </div>
+                    <input type="checkbox" name="backSeatMax" id="backSeatMax" />
+                    <div>
+                      <label for="startState">Date &amp; Time</label>
+                      <input type="datetime" name="" id="startDate" />
+                    </div>
+                    <div>
+                      <label for="details">Ride &amp; Details</label>
+                      <input type="text" name="" id="details" />
+                    </div>
+                    <div>
+                      <label for="description">Ride &amp; Description</label>
+                      <textarea type="text" name="" id="description"></textarea>
+                    </div>
+                    <div>
+                      <label for="priceOffered">Ride &amp; priceOffered</label>
+                      <textarea type="text" name="" id="priceOffered"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="progressBtns"></div>
+              </div>
+              <div class="ride-details">
+                <a href="" class="ride-back"
+                  ><i class="fa fa-arrow-left"></i> Back</a
+                ><a href="" class="ride-next"
+                  >Forward <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div id="search-ride-form"><h1>Find a Ride</h1></div>
+          </div>
+        </header>
+        <ul id="slide-out" class="sidenav" style="text-align: left;">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="../assets/img/vintagecar.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="../assets/img/users/user-2517433_640.png"></a>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"><span class="white-text email">johndoe@gmail.com</span></a>
+          </div></li>
+          
+          <li class="active blue-grey-text text-darken-4"><a href="dashboard.html" class="blue-grey-text text-darken-4"><i class="material-icons blue-grey-text text-darken-4">dashboard</i>Dashboard</a></li>
+          <li><a href="profile.html"><i class="material-icons orange-text">person</i>My Profile <span class="new badge orange pulse">Incomplete</span></a>  </li>
+          <li><div class="divider"></div></li>
+          
+          <li><a class="waves-effect" href="bookings.html"><i class="material-icons green-text">event</i>Bookings <span class="new badge green pulse">99+</span></a></li>
+          <li><a class="waves-effect" href="rides.html"><i class="material-icons blue-text">airline_seat_recline_extra</i>Rides Offered<span class="new badge blue pulse">99+</span></a></li>
+          <li><a class="waves-effect" href="vehicles.html"><i class="material-icons">time_to_leave</i>Vehicles</a></li>
+          <li><a class="waves-effect" href="account.html"><i class="material-icons">payment</i>Account</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="support.html"><i class="material-icons">settings</i>Support Tickets</a></li>
+          <li><a class="waves-effect" href="info.html"><i class="material-icons">info</i>Info & FAQs</a></li>
+          
+          <li><a class="waves-effect" href="../index.html"><i class="material-icons">backspace</i>Logout</a></li>
+        
+        </ul>
+
+        <section class="parallax-container section" style="height: 250px;">
+        <div style="background-color: rgba(0,0,0,0.5); top: 0; left: 0; width: 100%; min-height: 500px; padding-top: 20px;">
+        <div class="row center" style="margin-top: 150px;">
+        <div class="container">
+          <h3 class="white-text">Dashboard</h3>
+        </div>
+        </div>
+        </div>
+        <div class="parallax">
+          <img src="../assets/img/taxi.jpg" alt="">
+        </div>
+        </section>
+
+
+  <!-- <div class="navbar-fixed">
+      <nav>
+          <div class="nav-wrapper">
+            <a href="" class="brand-logo">JojoRide</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href=""></a>First Link</li>
+              <li><a href=""></a>Second Link</li>
+            </ul>
+          </div>
+        </nav>      
+        
+  </div> -->
+  <div class="hide-on-large-only container" style="padding-top: 52px;">
+    <div class="title" style="display:flex; align-items: center; align-content: center;">
+      <img src="../assets/img/users/user-2517433_640.png" alt="" width="50px" height="50px" class="circle"> &nbsp; <h4> Hello {Username}</h4>
+  </div>
+  <div class="notifications" style="text-align: left;">
+    <h5>  <i class="fa fa-bell"></i> Notifications (5)</h5>  </div>
+</div>
+  <footer>
+      <div class="pre-footer">
+        <div class="footer-links">
+          <div class="footer-col">
+            <a onclick="M.toast({html: 'I am a toast'})" class="footer-link">How it works</a>
+            <a href="" class="footer-link">About us</a>
+            <a href="" class="footer-link">Frequently Asked Questions</a>
+          </div>
+          <div class="footer-col">
+            <a href="" class="footer-link">Contact</a>
+            <a href="" class="footer-link">Terms and Conditions</a>
+            <a href="" class="footer-link">Press</a>
+          </div>
+          <div class="footer-col">
+            <a href="" class="footer-link">We're Hiring</a>
+          </div>
+          <div class="footer-col">
+            <a href="" class="footer-link">How it works</a>
+            <div class="social-links">
+              <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i
+              ><i class="fab fa-youtube"></i><i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer">
+        <p>
+          Copyright &copy; <span id="year"></span> JojoRide &#8226; Sabertech
+        </p>
+      </div>
+    </footer>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+    <script src="../assets/js/ride.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script>
+     $(document).ready(function(){
+      M.AutoInit();
+    // $('.sidenav').sidenav();
+      });
+    </script>
+  </body>
+</html>
